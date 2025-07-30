@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedule Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Class Schedule Generator</h2>
+
+  <div class="container">
+    <label>Subject:</label>
+    <input type="text" id="subject">
+    <label>Semester Hours:</label>
+    <input type="number" id="hours">
+    <label>Faculty:</label>
+    <select id="faculty">
+      <option value="Ms. Maya">Ms. Maya</option>
+      <option value="Dr. John">Dr. John</option>
+      <option value="Dr. Meghna">Dr. Meghna</option>
+      <option value="Mr. Jay">Mr. Jay</option>
+      <option value="Mrs. Smitha">Mrs. Smitha</option>
+      <option value="Dr. Thomson">Dr. Thomson</option>
+    </select>
+    <label>Preferred Time:</label>
+    <input type="text" id="time" placeholder="e.g., Monday 9am">
+    <button onclick="generateSchedule()">Generate Schedule</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <div class="schedule-table">
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>9am-11am</td>
+        <td>Ms. Maya</td><td></td><td>Dr. John</td><td></td><td>Mr. Jaydev</td>
+      </tr>
+      <tr>
+        <td>11am-1pm</td>
+        <td>Mrs. Smitha</td><td>Dr. Thomson</td><td>Dr. Meghna</td><td></td><td></td>
+      </tr>
+      <tr>
+        <td>2pm-4pm</td>
+        <td>Mr. Jay</td><td></td><td></td><td>Dr. John</td><td>Mrs. Smitha</td>
+      </tr>
+      <tr>
+        <td>4pm-6pm</td>
+        <td>Dr. Thomson</td><td></td><td>Dr. Meghna</td><td></td><td>Dr. John</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
